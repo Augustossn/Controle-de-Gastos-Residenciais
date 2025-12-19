@@ -7,6 +7,7 @@ Este projeto implementa um sistema de controle de gastos residenciais, dividido 
 - Backend: C# e .NET 8 (Web API)
 - Persistência: Entity Framework Core com SQLite (dados persistentes em `ControleGastos.db`)
 - Frontend: React com TypeScript (Vite)
+- Testes: xUnit com Mock
 
 ## 2. Como Executar o Projeto
 
