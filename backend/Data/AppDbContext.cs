@@ -5,10 +5,12 @@ namespace ControleGastosApi.Data
 {
     public class AppDbContext : DbContext
     {
+        // construtor para implementar o options
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
 
+        // usando virtual para implementar os testes automatizados
         public virtual DbSet<Pessoa> Pessoas { get; set; }
         public virtual DbSet<Categoria> Categorias { get; set; }
         public virtual DbSet<Transacao> Transacoes { get; set; }
@@ -17,6 +19,7 @@ namespace ControleGastosApi.Data
         {
             base.OnModelCreating(modelBuilder);
 
+            // fazendo o relacionameto entre pessoas e transacoes
             modelBuilder.Entity<Pessoa>()
                 .HasMany(p => p.Transacoes)
                 .WithOne(t => t.Pessoa)

@@ -8,7 +8,7 @@ namespace ControleGastosApi.Data
         public AppDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-            optionsBuilder.UseSqlite("Data Source=ControleGastos.db");
+            optionsBuilder.UseSqlite("Data Source=ControleGastos.db"); // string de conexão do db
 
             return new AppDbContext(optionsBuilder.Options);
         }
