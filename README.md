@@ -47,3 +47,17 @@ Para rodar a aplicação, é necessário iniciar o backend e o frontend em termi
    pnpm dev
    ```
    O frontend está configurado pra rodar em http://localhost:5173
+
+## 3. Como Executar os Testes
+### Passo 1: Mudar o diretório
+1. Navegue até o diretório dos testes:
+   ```cmd
+   cd Testes
+
+2. Troque para o diretório dos testes:
+   ```cmd
+   cd ControleGastosApi.Testes
+
+3. Inicie os testes:
+   ```cmd
+   dotnet test
