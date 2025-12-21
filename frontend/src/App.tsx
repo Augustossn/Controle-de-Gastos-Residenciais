@@ -3,7 +3,6 @@ import PessoasPage from './pages/PessoasPage';
 import CategoriasPage from './pages/CategoriasPage';
 import TransacoesPage from './pages/TransacoesPage';
 import './index.css';
-import React from 'react';
 
 const App = () => {
   return (
