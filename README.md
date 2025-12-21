@@ -58,6 +58,7 @@ Para rodar a aplicação, é necessário iniciar o backend e o frontend em termi
    ```cmd
    cd ControleGastosApi.Testes
 
-3. Inicie os testes:
+### Passo 2: Iniciar os testes
+1. Inicie os testes:
    ```cmd
    dotnet test
